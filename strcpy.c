@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
  
     memset(passwd,0,sizeof(passwd)); 
  
-    strcpy(passwd, argv[1]); 
+    strncpy(passwd, argv[1], 10); 
  
     if(0 == strcmp("LinuxGeek", passwd)) 
     { 
